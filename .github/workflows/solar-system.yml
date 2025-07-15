@@ -30,7 +30,8 @@ jobs:
           with:
             # A list of files, directories, and wildcard patterns to cache and restore
             path: ~/.npm
-            key: ${{ runner.os }}-node-${{ hashFiles('/package-lock.json') }}
+            key: '${{ runner.os }}-node-modules-${{ hashFiles(''package-lock.json'') }}'
+            
             
         - name: Install Dependencies
           run: npm install
