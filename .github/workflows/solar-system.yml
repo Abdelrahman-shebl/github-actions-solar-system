@@ -71,7 +71,7 @@
     docker: 
       runs-on: ubuntu-latest
       permissions: 
-        actions: write
+        packages: write
       needs: [code-coverage, unit-testing]
       steps:
         - name: Checkout Repository
