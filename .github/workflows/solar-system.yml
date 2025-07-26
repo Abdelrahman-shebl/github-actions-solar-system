@@ -110,7 +110,7 @@
           with:
             method: kubeconfig
             kubeconfig: ${{secrets.KUBECONFIG }}
-
+ 
         - name: testing installation
           run: kubectl version -o yaml
 
